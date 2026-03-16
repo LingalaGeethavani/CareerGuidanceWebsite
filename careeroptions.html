@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers Page</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+  background: #ffffff;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+/* Banner */
+
+.banner {
+  background: #e91e63;
+  color: white;
+  padding: 40px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  max-width: 300px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Grid Section */
+
+.grid {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  background: #f9f9f9;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">career★girls</div>
+  <nav>
+    <a href="#">Explore Careers</a>
+    <a href="#">College Prep</a>
+    <a href="#">Resources</a>
+    <a href="#">Community</a>
+    <a href="#">Events</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>Careers</h1>
+
+  <div class="dropdown">
+    <select>
+      <option>Choose a Category</option>
+      <option>Finance</option>
+      <option>Creative Arts</option>
+      <option>Technology</option>
+      <option>Healthcare</option>
+    </select>
+  </div>
+</section>
+
+<section class="grid">
+
+  <div class="card">
+    <img src="https://picsum.photos/400/300?1">
+    <div class="card-title">Accountant</div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/400/300?2">
+    <div class="card-title">Actor</div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/400/300?3">
+    <div class="card-title">Actuary</div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/400/300?4">
+    <div class="card-title">Administrative Assistant</div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/400/300?5">
+    <div class="card-title">Marketing Manager</div>
+  </div>
+
+</section>
+
+</body>
+</html>

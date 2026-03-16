@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Quiz - Explore by Interest</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* ===== Header ===== */
+header {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: #ff6f00;
+  color: white;
+  padding: 50px 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+/* ===== Main Layout ===== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 320px;
+  padding: 40px;
+}
+
+.left-panel h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.left-panel p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Checklist Grid */
+.checklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+}
+
+.checklist label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checklist input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6f00;
+}
+
+/* Right Image */
+.right-panel {
+  flex: 1;
+  min-width: 320px;
+}
+
+.right-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .checklist {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">career★girls</div>
+  <nav>
+    <a href="#">Explore Careers</a>
+    <a href="#">College Prep</a>
+    <a href="#">Resources</a>
+    <a href="#">Community</a>
+    <a href="#">Events</a>
+    <a href="#">Donate</a>
+  </nav>
+</header>
+
+<!-- Hero Title -->
+<section class="hero">
+  <h1>Career Quiz — Explore by Interest</h1>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+
+  <!-- Left Panel -->
+  <div class="left-panel">
+    <h2>Still Need Help Deciding?</h2>
+    <p>Select items below that interest you:</p>
+
+    <div class="checklist">
+      <label><input type="checkbox"> Tools & Machines</label>
+      <label><input type="checkbox"> Helping People</label>
+      <label><input type="checkbox"> Math & Science</label>
+      <label><input type="checkbox"> Being a Leader</label>
+      <label><input type="checkbox"> Teaching</label>
+      <label><input type="checkbox"> Following a Set Plan</label>
+      <label><input type="checkbox"> Having a Business</label>
+      <label><input type="checkbox"> Art / Visual Art</label>
+      <label><input type="checkbox"> Collecting / Organizing</label>
+      <label><input type="checkbox"> Solving a Mystery</label>
+      <label><input type="checkbox"> Being Independent</label>
+      <label><input type="checkbox"> Working Outside</label>
+      <label><input type="checkbox"> Animals / Plants</label>
+      <label><input type="checkbox"> Teamwork</label>
+      <label><input type="checkbox"> Selling Things</label>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="right-panel">
+    <!-- Replace with your image path -->
+    <img src="land.jpg" alt="Career Inspiration">
+  </div>
+
+</div>
+
+</body>
+</html>
